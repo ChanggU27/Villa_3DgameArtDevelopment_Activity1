@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class NetMoveScript : MonoBehaviour
 {
-    public float moveSpeed = 5;
-    public float deadZone = -20;
+    public int moveSpeed = 5;
+    public float deadZone = -40;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
