@@ -22,11 +22,13 @@ public class NetMiddleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collission)
     {
-        if (collission.gameObject.layer == 3)
+        if (!logic.isGameOver)
         {
+            if (collission.gameObject.layer == 3)
+            {
             logic.AddScore(1);
             audioSource.PlayOneShot(scoreSound);
+            }
         }
-
     }
 }

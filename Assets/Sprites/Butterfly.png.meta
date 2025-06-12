@@ -116,10 +116,10 @@ TextureImporter:
       name: Butterfly_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1
-        width: 480
-        height: 497
+        x: 9
+        y: 2
+        width: 491
+        height: 495
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Butterfly_0: 4530433918361379743
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -4,28 +4,32 @@ public class ButterflyScript : MonoBehaviour
 {
     public Rigidbody2D myRigidbody;
     public float flapStrength;
-    public LogicScript logic;
-    public bool butterflyIsAlive = true;
+    public LogicScript logic; 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<LogicScript>();
-
+        myRigidbody.linearVelocity = Vector2.zero;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0) && butterflyIsAlive)
+
+        if (logic.gameHasStarted && !logic.isGameOver)
         {
-            myRigidbody.linearVelocity = Vector2.up * flapStrength;
+
+            if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
+            {
+                myRigidbody.linearVelocity = Vector2.up * flapStrength;
+            }
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         logic.GameOver();
-        butterflyIsAlive = false;
+        myRigidbody.linearVelocity = Vector2.zero; 
     }
-
 }

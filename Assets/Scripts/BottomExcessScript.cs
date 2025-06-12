@@ -15,11 +15,13 @@ public class BottomExcessScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collission)
     {
-        if (collission.gameObject.layer == 3)
+        if (!logic.isGameOver)
         {
-            logic.AddScore(4);
+            if (collission.gameObject.layer == 3)
+            {
+            logic.AddScore(2);
             audioSource.PlayOneShot(scoreSound);
+            }
         }
-
     }
 }
