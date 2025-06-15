@@ -114,6 +114,6 @@ public class LogicScript : MonoBehaviour
             PlayerPrefs.SetInt("HighScore", highScore); 
             PlayerPrefs.Save(); 
         }
-        highScoreGameOverText.text = "High Score: " + highScore.ToString(); 
+        highScoreGameOverText.text = "Highest Score: " + highScore.ToString(); 
     }
 }
