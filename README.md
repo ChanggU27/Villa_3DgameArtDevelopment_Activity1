@@ -19,6 +19,7 @@ Features:
 -> Engaging Audio: Includes background music and a sound effect for the game over state.
 
 How far can you fly? Download now and set a new high score!
+https://github.com/ChanggU27/Villa_3DgameArtDevelopment_Activity1/archive/refs/tags/v1.0.0.zip
 
 ![image](https://github.com/user-attachments/assets/c303ba89-09a3-44ff-9888-aa8a45c67457)
 
